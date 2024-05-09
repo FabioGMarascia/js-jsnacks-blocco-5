@@ -24,3 +24,5 @@
    quanto il numero di elementi dell’array).
    La funzione ritornerà un nuovo array con i valori che hanno la posizione
    compresa tra “a” e “b”
+
+se trovi il numero 1 finchè indice non è maggiore

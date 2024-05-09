@@ -68,3 +68,20 @@
 // arrayFusion(array1, array2);
 
 // SNACK - 5
+let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function numbBetween(array, n1, n2) {
+	let arrayBetween = [];
+
+	if (n1 < n2 && n2 < array[array.length - 1]) {
+		for (let i = 0; i < n2 - 1; i++) {
+			if (array[i] > n1) {
+				arrayBetween.push(array[i]);
+			}
+		}
+	}
+	return arrayBetween;
+}
+
+let arrayBetween = numbBetween(list, 3, 7);
+console.log(arrayBetween);
