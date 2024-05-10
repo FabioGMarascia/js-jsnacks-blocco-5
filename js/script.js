@@ -56,12 +56,12 @@ let a = `ciao`;
 // SNACK - 3.2 WITH ITERATION
 function reverseString(stringa) {
 	let array1 = Array.from(stringa);
-	let array2 = [];
+	let stringReversed = ``;
 	for (let i = array1.length - 1; i >= 0; i--) {
 		const element = array1[i];
 		array2 += element;
 	}
-	console.log(array2);
+	console.log(stringReversed);
 }
 reverseString(a);
 
