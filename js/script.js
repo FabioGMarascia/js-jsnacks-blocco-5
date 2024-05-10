@@ -59,7 +59,7 @@ function reverseString(stringa) {
 	let stringReversed = ``;
 	for (let i = array1.length - 1; i >= 0; i--) {
 		const element = array1[i];
-		array2 += element;
+		stringReversed += element;
 	}
 	console.log(stringReversed);
 }
