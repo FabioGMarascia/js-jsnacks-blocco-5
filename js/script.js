@@ -40,33 +40,44 @@
 // }
 // numbMagMin(zucchine, 15, `peso`);
 
-// // SNACK - 3
-// let a = `ciao`;
+// SNACK - 3
+let a = `ciao`;
 
+// // SNACK - 3.1 WITHOUT ITERATION
 // function reverseString(stringa) {
 // 	let array1 = Array.from(stringa);
-// 	console.log(array1);
 // 	let array2 = [];
 // 	array1.reverse();
-// 	console.log(array1);
 // 	array2 = array1.join("");
 // 	console.log(array2);
 // }
 // reverseString(a);
 
-// SNACK - 4
-const array1 = [`a`, `b`, `c`];
-const array2 = [1, 2, 3];
-
-function arrayFusion(x, y) {
-	let arrayFused = [];
-	for (let i = 0; i < x.length; i++) {
-		arrayFused.push(x[i]);
-		arrayFused.push(y[i]);
+// SNACK - 3.2 WITH ITERATION
+function reverseString(stringa) {
+	let array1 = Array.from(stringa);
+	let array2 = [];
+	for (let i = array1.length - 1; i >= 0; i--) {
+		const element = array1[i];
+		array2 += element;
 	}
-	console.log(arrayFused);
+	console.log(array2);
 }
-arrayFusion(array1, array2);
+reverseString(a);
+
+// // SNACK - 4
+// const array1 = [`a`, `b`, `c`];
+// const array2 = [1, 2, 3];
+
+// function arrayFusion(x, y) {
+// 	let arrayFused = [];
+// 	for (let i = 0; i < x.length; i++) {
+// 		arrayFused.push(x[i]);
+// 		arrayFused.push(y[i]);
+// 	}
+// 	console.log(arrayFused);
+// }
+// arrayFusion(array1, array2);
 
 // // SNACK - 5
 // let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
