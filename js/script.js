@@ -53,31 +53,30 @@ let a = `ciao`;
 // }
 // reverseString(a);
 
-// SNACK - 3.2 WITH ITERATION
-function reverseString(stringa) {
-	let array1 = Array.from(stringa);
-	let stringReversed = ``;
-	for (let i = array1.length - 1; i >= 0; i--) {
-		const element = array1[i];
-		stringReversed += element;
-	}
-	console.log(stringReversed);
-}
-reverseString(a);
-
-// // SNACK - 4
-// const array1 = [`a`, `b`, `c`];
-// const array2 = [1, 2, 3];
-
-// function arrayFusion(x, y) {
-// 	let arrayFused = [];
-// 	for (let i = 0; i < x.length; i++) {
-// 		arrayFused.push(x[i]);
-// 		arrayFused.push(y[i]);
+// // SNACK - 3.2 WITH ITERATION
+// function reverseString(stringa) {
+// 	let array1 = Array.from(stringa);
+// 	let stringReversed = ``;
+// 	for (let i = array1.length - 1; i >= 0; i--) {
+// 		const element = array1[i];
+// 		stringReversed += element;
 // 	}
-// 	console.log(arrayFused);
+// 	console.log(stringReversed);
 // }
-// arrayFusion(array1, array2);
+// reverseString(a);
+
+// SNACK - 4
+const array1 = [`a`, `b`, `c`];
+const array2 = [1, 2, 3];
+
+function arrayFusion(x, y) {
+	let arrayFused = [];
+	for (let i = 0; i < x.length; i++) {
+		arrayFused.push(x[i], y[i]);
+	}
+	console.log(arrayFused);
+}
+arrayFusion(array1, array2);
 
 // // SNACK - 5
 // let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
