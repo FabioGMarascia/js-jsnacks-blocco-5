@@ -45,6 +45,7 @@
 
 // function reverseString(stringa) {
 // 	let array1 = Array.from(stringa);
+// 	console.log(array1);
 // 	let array2 = [];
 // 	array1.reverse();
 // 	console.log(array1);
@@ -54,34 +55,34 @@
 // reverseString(a);
 
 // SNACK - 4
-// const array1 = [`a`, `b`, `c`];
-// const array2 = [1, 2, 3];
+const array1 = [`a`, `b`, `c`];
+const array2 = [1, 2, 3];
 
-// function arrayFusion(x, y) {
-// 	let arrayFused = [];
-// 	for (let i = 0; i < n; i++) {
-// 		arrayFused.push(x[i]);
-// 		arrayFused.push(y[i]);
-// 	}
-// 	console.log(arrayFused);
-// }
-// arrayFusion(array1, array2);
-
-// SNACK - 5
-let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-function numbBetween(array, n1, n2) {
-	let arrayBetween = [];
-
-	if (n1 < n2 && n2 < array[array.length - 1]) {
-		for (let i = 0; i < n2 - 1; i++) {
-			if (array[i] > n1) {
-				arrayBetween.push(array[i]);
-			}
-		}
+function arrayFusion(x, y) {
+	let arrayFused = [];
+	for (let i = 0; i < x.length; i++) {
+		arrayFused.push(x[i]);
+		arrayFused.push(y[i]);
 	}
-	return arrayBetween;
+	console.log(arrayFused);
 }
+arrayFusion(array1, array2);
 
-let arrayBetween = numbBetween(list, 3, 7);
-console.log(arrayBetween);
+// // SNACK - 5
+// let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function numbBetween(array, n1, n2) {
+// 	let arrayBetween = [];
+
+// 	if (n1 < n2 && n2 < array[array.length - 1]) {
+// 		for (let i = 0; i < n2 - 1; i++) {
+// 			if (array[i] > n1) {
+// 				arrayBetween.push(array[i]);
+// 			}
+// 		}
+// 	}
+// 	return arrayBetween;
+// }
+
+// let arrayBetween = numbBetween(list, 3, 7);
+// console.log(arrayBetween);
