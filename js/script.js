@@ -67,12 +67,21 @@ let a = `ciao`;
 
 // SNACK - 4
 const array1 = [`a`, `b`, `c`];
-const array2 = [1, 2, 3];
+const array2 = [1, 2, 3, 4, 5];
 
 function arrayFusion(x, y) {
 	let arrayFused = [];
-	for (let i = 0; i < x.length; i++) {
-		arrayFused.push(x[i], y[i]);
+	let n = array1.length;
+	if (array1.length < array2.length) {
+		n = array2.length;
+	}
+	for (let i = 0; i < n; i++) {
+		if (x[i] != undefined) {
+			arrayFused.push(x[i]);
+		}
+		if (y[i] != undefined) {
+			arrayFused.push(y[i]);
+		}
 	}
 	console.log(arrayFused);
 }
